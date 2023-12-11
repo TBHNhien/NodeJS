@@ -1,0 +1,31 @@
+{{#each products}}
+  <div class="row">
+    {{#each this}}
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          {{#if this.imagePath}}
+            <img src="{{this.imagePath}}" alt="">
+          {{else}}
+            <img src="/path/to/default/image.jpg" alt="Default Image">
+          {{/if}}
+          <div class="caption">
+            <h3>{{this.title}}</h3>
+            <p> 
+              <div class="description">
+                {{this.description}}             
+              </div>
+            </p>
+            <div class="clearfix">
+              <div class="price pull-left">
+                Price : {{this.price}} vnd
+              </div>
+              <div>
+                <a href="#" class="btn btn-success pull-right"><i class="fa fa-plus fa-fw"></i>Add to shopping cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+{{/each}}

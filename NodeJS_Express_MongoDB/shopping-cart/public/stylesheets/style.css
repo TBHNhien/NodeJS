@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Century Gothic';
+}
+
+.thumbnail .price{
+  font-weight: bold;
+}
+
+.thumbnail img{
+  max-height: 300px;
+
+}
+
+
+
+a {
+  color: #00B7FF;
+}
